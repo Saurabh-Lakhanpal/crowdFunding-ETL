@@ -97,9 +97,20 @@ Extracting and transforming the data from the `contacts.xlsx` Excel file:
 5. Split each "name" column value into a first and last name, and place each in a new column.
 6. Clean and then export the DataFrame as `contacts.csv` and save it to the GitHub repository.
 
-Check that the final DataFrame resembles the one in the following image:
+Check that the final DataFrame resembles this output:
 
-![image](https://github.com/user-attachments/assets/3116fd0a-7cca-4347-bc0d-bfe882e97670)
+| contact_id | first_name | last_name | email                |
+|------------|------------|-----------|----------------------|
+| con1       | John       | Doe       | johndoe@example.com  |
+| con2       | Jane       | Smith     | janesmith@example.com|
+| con3       | Mike       | Johnson   | mikejohnson@example.com|
+| con4       | Emily      | Davis     | emilydavis@example.com|
+| con5       | David      | White     | davidwhite@example.com|
+| con6       | Sarah      | Brown     | sarahbrown@example.com|
+| con7       | Chris      | Wilson    | chriswilson@example.com|
+| con8       | Amanda     | Taylor    | amandataylor@example.com|
+| con9       | James      | Thomas    | jamesthomas@example.com|
+| con10      | Laura      | Lopez     | lauralopez@example.com|
 
 ### Create the Crowdfunding Database
 
