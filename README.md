@@ -13,8 +13,6 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
    - A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
    - A "category" column that contains only the category titles
 
-   The following image shows this category DataFrame:
-
 | category_id | category | category_name  |
 |-------------|----------|----------------|
 | 0           | cat1     | food           |
@@ -34,9 +32,19 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
    - A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
    - A "subcategory" column that contains only the subcategory titles
 
-   The following image shows this subcategory DataFrame:
+| subcategory_id | subcategory   |
+|----------------|---------------|
+| subcat1        | food trucks   |
+| subcat2        | rock          |
+| subcat3        | web           |
+| subcat4        | plays         |
+| subcat5        | documentary   |
+| subcat6        | electric music|
+| subcat7        | drama         |
+| subcat8        | indie rock    |
+| subcat9        | wearables     |
+| subcat10       | nonfiction    |
 
-   ![subcategory DataFrame](https://github.com/user-attachments/assets/168e7a0a-7d94-4cfe-9a3d-d137c7a7722f)
 
 6. Export the subcategory DataFrame as `subcategory.csv` and save it to the GitHub repository.
 
@@ -58,10 +66,12 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
    - The "category_id" column, with unique identification numbers matching those in the "category_id" column of the category DataFrame
    - The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
 
-   The following image shows this campaign DataFrame:
-
-   ![image](https://github.com/user-attachments/assets/4ba867bb-4625-4160-9b47-4c3c76aeb695)
-
+| cf_id | contact_id | company_name | description | goal | pledged | outcome | backers_count | country | currency | launch_date | end_date | category_id | subcategory_id |
+|-------|------------|--------------|-------------|------|---------|---------|---------------|---------|----------|-------------|--------- |-------------|-----------------|
+| cf1  | con1       | Example Co.   | A great product | 10000 | 15000   | funded | 200           | US      | USD      | 2023-05-01  | 2023-06-01 | cat1        | subcat1          |
+| cf2  | con2       | Another Co.   | Innovative idea | 20000 | 18000   | failed | 150           | UK      | GBP      | 2023-05-10  | 2023-07-10 | cat2        | subcat2          |
+| cf3  | con3       | Startup Inc.  | New software   | 5000  | 5500    | funded | 100           | CA      | CAD      | 2023-06-01  | 2023-07-01 | cat3        | subcat3          |
+| cf4  | con4       | Techie Tech   | Cutting-edge gadget | 15000 | 12000   | funded | 250           | US      | USD      | 2023-04-15  | 2023-06-15 | cat4        | subcat4          |
 
 2. Export the campaign DataFrame as `campaign.csv` and save it to the GitHub repository.
 
