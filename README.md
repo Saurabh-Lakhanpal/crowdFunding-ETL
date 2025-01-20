@@ -15,7 +15,7 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
 
    The following image shows this category DataFrame:
 
-![category DataFrame](https://github.com/user-attachments/assets/de61fa52-46d0-4c61-9a85-8e4c421973c3)
+   ![category DataFrame](https://github.com/user-attachments/assets/de61fa52-46d0-4c61-9a85-8e4c421973c3)
 
 3. Export the category DataFrame as `category.csv` and save it to the GitHub repository.
 
@@ -25,7 +25,7 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
 
    The following image shows this subcategory DataFrame:
 
-![subcategory DataFrame](https://github.com/user-attachments/assets/168e7a0a-7d94-4cfe-9a3d-d137c7a7722f)
+   ![subcategory DataFrame](https://github.com/user-attachments/assets/168e7a0a-7d94-4cfe-9a3d-d137c7a7722f)
 
 6. Export the subcategory DataFrame as `subcategory.csv` and save it to the GitHub repository.
 
@@ -49,7 +49,7 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
 
    The following image shows this campaign DataFrame:
 
-![image](https://github.com/user-attachments/assets/4ba867bb-4625-4160-9b47-4c3c76aeb695)
+   ![image](https://github.com/user-attachments/assets/4ba867bb-4625-4160-9b47-4c3c76aeb695)
 
 
 2. Export the campaign DataFrame as `campaign.csv` and save it to the GitHub repository.
@@ -66,7 +66,7 @@ Extracting and transforming the data from the `contacts.xlsx` Excel file:
    - Add the values for each row to a new list.
 4. Create a new DataFrame that contains the extracted data.
 5. Split each "name" column value into a first and last name, and place each in a new column.
-6. Clean and export the DataFrame as `contacts.csv` and save it to your GitHub repository.
+6. Clean and export the DataFrame as `contacts.csv` and save it to the GitHub repository.
 
 **Method 2: Use regular expressions**
 1. Import the `contacts.xlsx` file into a DataFrame.
@@ -74,7 +74,7 @@ Extracting and transforming the data from the `contacts.xlsx` Excel file:
 3. Create a new DataFrame with the extracted data.
 4. Convert the "contact_id" column to the integer type.
 5. Split each "name" column value into a first and last name, and place each in a new column.
-6. Clean and then export the DataFrame as `contacts.csv` and save it to your GitHub repository.
+6. Clean and then export the DataFrame as `contacts.csv` and save it to the GitHub repository.
 
 Check that the final DataFrame resembles the one in the following image:
 
@@ -87,7 +87,7 @@ Check that the final DataFrame resembles the one in the following image:
 2. Use the information from the ERD to create a table schema for each CSV file.
    > **Note:** Remember to specify the data types, primary keys, foreign keys, and other constraints.
 
-3. Save the database schema as a Postgres file named `crowdfunding_db_schema.sql`, and save it to your GitHub repository.
+3. Save the database schema as a Postgres file named `crowdfunding_db_schema.sql`, and save it to the GitHub repository.
 
 4. Create a new Postgres database, named `crowdfunding_db`.
 
