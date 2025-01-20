@@ -15,7 +15,7 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
 
    The following image shows this category DataFrame:
 
-   | category_id | category | category_name  |
+| category_id | category | category_name  |
 |-------------|----------|----------------|
 | 0           | cat1     | food           |
 | 1           | cat2     | music          |
@@ -26,6 +26,7 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
 | 6           | cat7     | games          |
 | 7           | cat8     | photography    |
 | 8           | cat9     | journalism     | 
+
 
 3. Export the category DataFrame as `category.csv` and save it to the GitHub repository.
 
