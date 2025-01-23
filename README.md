@@ -130,19 +130,3 @@ Check that the final DataFrame resembles this output:
 7. Import each CSV file into its corresponding SQL table.
 
 8. Verify that each table has the correct data by running a `SELECT` statement for each.
-
-### Hints:
-
-- To split each "category & sub-category" column value into "category" and "subcategory" column values, use `df[["new_column1","new_column2"]] = df["column"].str.split()`. Make sure to pass the correct parameters to the split() function.
-
-- To get the unique category and subcategory values from the "category" and "subcategory" columns, create a NumPy array where the array length equals the number of unique categories and unique subcategories from each column. For information about how to do so, see [numpy.arange](https://numpy.org/doc/stable/reference/generated/numpy.arange.html) documentation.
-
-- To create the category and subcategory identification numbers, use a list comprehension to add the "cat" string or the "subcat" string to each number in the category or the subcategory array, respectively.
-
-- For more information about creating a new Pandas DataFrame, see the [pandas.DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) documentation.
-
-- To convert the "goal" and "pledged" columns to the float data type, use the `astype()` method.
-
-- To convert the "launch_date" and "end_date" UTC times to the datetime format, see the `Transform_Grocery_Orders_Solved.ipynb` activity solution.
-
-- For more information about how to add the "category_id" and "subcategory_id" unique identification numbers to the campaign DataFrame, see the [pandas.DataFrame.merge](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html) documentation.
