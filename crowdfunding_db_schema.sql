@@ -1,10 +1,16 @@
+-- This commented database creation line to run only one time.
 -- CREATE DATABASE crowdfunding_db;
 
+
+-- Drop table drops that existing tables in case they exist. This should be run in the given order only.
 DROP TABLE IF EXISTS campaign_tb;
 DROP TABLE IF EXISTS countries_tb;   
 DROP TABLE IF EXISTS contacts_tb;  
 DROP TABLE IF EXISTS subcategory_tb;  
 DROP TABLE IF EXISTS category_tb; 
+
+
+-- Create tables in the given order only
 
 CREATE TABLE category_tb (
   "category_id" varchar(10) PRIMARY KEY,
