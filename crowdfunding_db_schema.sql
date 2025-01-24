@@ -1,12 +1,10 @@
 -- CREATE DATABASE crowdfunding_db;
 
-
 DROP TABLE IF EXISTS campaign_tb;
 DROP TABLE IF EXISTS countries_tb;   
 DROP TABLE IF EXISTS contacts_tb;  
 DROP TABLE IF EXISTS subcategory_tb;  
 DROP TABLE IF EXISTS category_tb; 
-
 
 CREATE TABLE category_tb (
   "category_id" varchar(10) PRIMARY KEY,
@@ -45,14 +43,8 @@ CREATE TABLE campaign_tb (
   "end_date" date NOT NULL,
   "category_id" varchar(10) NOT NULL,
   "subcategory_id" varchar(10) NOT NULL,
-  FOREIGN KEY (contact_id) REFERENCES contacts_tb (contact_id),
-  FOREIGN KEY (country) REFERENCES countries_tb (country),
-  FOREIGN KEY (category_id) REFERENCES category_tb (category_id),
-  FOREIGN KEY (subcategory_id) REFERENCES subcategory_tb (subcategory_id)
+  CONSTRAINT "foreign_campaign_contact_id" FOREIGN KEY (contact_id) REFERENCES contacts_tb (contact_id),
+  CONSTRAINT "foreign_campaign_country" FOREIGN KEY (country) REFERENCES countries_tb (country),
+  CONSTRAINT "foreign_campaign_category_id" FOREIGN KEY (category_id) REFERENCES category_tb (category_id),
+  CONSTRAINT "foreign_campaign_subcategory_id" FOREIGN KEY (subcategory_id) REFERENCES subcategory_tb (subcategory_id)
 );
-
--- COPY category_tb FROM '/category_tb.csv' DELIMITER ',' CSV HEADER;
--- COPY subcategory_tb FROM '/subcategory_tb.csv' DELIMITER ',' CSV HEADER;
--- COPY campaign_tb FROM '/campaign_tb.csv' DELIMITER ',' CSV HEADER;
--- COPY contacts_tb FROM '/contacts_tb.csv' DELIMITER ',' CSV HEADER;
--- COPY countries_tb FROM '/countries_tb.csv' DELIMITER ',' CSV HEADER;
