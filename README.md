@@ -117,7 +117,6 @@ Check that the final DataFrame resembles this output:
 1. Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBD.
 
 2. Use the information from the ERD to create a table schema for each CSV file.
-   > **Note:** Remember to specify the data types, primary keys, foreign keys, and other constraints.
 
 3. Save the database schema as a Postgres file named `crowdfunding_db_schema.sql`, and save it to the GitHub repository.
 

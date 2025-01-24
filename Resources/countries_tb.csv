@@ -1,8 +1,8 @@
-index,country,currency
-0,CA,CAD
-1,US,USD
-2,AU,AUD
-5,DK,DKK
-6,GB,GBP
-29,CH,CHF
-32,IT,EUR
+country,currency
+CA,CAD
+US,USD
+AU,AUD
+DK,DKK
+GB,GBP
+CH,CHF
+IT,EUR

@@ -1,0 +1,42 @@
+Link to the Diagram - https://dbdiagram.io/d/6765a9c0fc29fb2b3b0080b8
+
+########################################################################################################################
+
+TABLE campaign_tb {
+    cf_id           int [PK]  
+    contact_id      int [ref: > contacts_tb.contact_id]
+    company_name    varchar(255) 
+    description     text
+    goal            float [not null]
+    pledged         float [not null]
+    outcome         varchar(10) [not null]
+    backers_count   int [not null]
+    country         char(2) [ref: > countries_tb.country]
+    currency        char(3)
+    launch_date     date [not null]
+    end_date        date [not null]
+    category_id     varchar(10) [not null, ref: > category_tb.category_id]
+    subcategory_id  varchar(10) [not null, ref: > subcategory_tb.subcategory_id]
+}
+
+TABLE category_tb {
+    category_id  varchar(10) [PK]
+    category     varchar(255) [not null]
+}
+
+TABLE subcategory_tb {
+    subcategory_id  varchar(10) [PK]
+    subcategory     varchar(255) [not null]
+}
+
+TABLE contacts_tb {
+    contact_id  int [PK]
+    first_name  varchar(50) [not null]
+    last_name   varchar(50)
+    email       varchar(255) [not null]
+}
+
+TABLE countries_tb {
+    country   char(2) [PK]
+    currency  char(3) [not null]
+}
