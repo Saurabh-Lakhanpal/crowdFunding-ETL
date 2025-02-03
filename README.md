@@ -8,6 +8,12 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
 - [ERD](https://github.com/Saurabh-Lakhanpal/crowdFunding-ETL/blob/main/ERD-crowdfunding_db.png)
 - [Verify-db](https://github.com/Saurabh-Lakhanpal/crowdFunding-ETL/blob/main/crowdfunding_db_queries.sql)
 
+### Group 2
+- Meghdut Noor
+- Melanie Liao
+- saurabh lakhanpal
+- Svetlana Kachina
+
 ## Instructions
 
 ### Create the Category and Subcategory DataFrames
