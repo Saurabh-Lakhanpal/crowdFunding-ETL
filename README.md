@@ -9,9 +9,9 @@ Build an ETL pipeline using Python, Pandas, and either Python dictionary methods
 - [Verify-db](https://github.com/Saurabh-Lakhanpal/crowdFunding-ETL/blob/main/crowdfunding_db_queries.sql)
 
 ### Contributors
-- Melanie Liao
-- saurabh lakhanpal
-- Svetlana Kachina
+- [Melanie Liao](https://github.com/melanieliao)
+- [Saurabh lakhanpal](https://github.com/Saurabh-Lakhanpal)
+- [Svetlana Kachina](https://github.com/SvetlanaKachina)
 
 ## Instructions
 
